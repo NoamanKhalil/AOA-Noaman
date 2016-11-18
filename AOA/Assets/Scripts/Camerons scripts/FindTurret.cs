@@ -48,7 +48,7 @@ public class FindTurret : NodeCs
 				if (turretDistance < closestDistance) 
 				{
 					closestDistance = turretDistance;
-					GetComponent<Unit> ().requestPath (turret.transform);
+				//GetComponent<Unit> ().requestPath (turret.transform);
 
 					if (allTurrets[allTurrets.Length -1])
 					{

@@ -115,7 +115,12 @@
      <Compile Include="Assets\Scripts\NoamanScripts\A star\PathRequestManager.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\A star\Pathfinding.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\A star\Unit.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\EnemyHelathTest.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\Old A Star\Grid.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\Old A Star\Heap.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\Old A Star\Node.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\Old A Star\PathFinding.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\Spawn.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\SpawnManager.cs" />

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 // intermediatery class to be used by behaviour tree to call the A*
 
@@ -75,4 +75,4 @@ public class Unit : MonoBehaviour {
 			}
 		}
 	}
-}
+}*/
