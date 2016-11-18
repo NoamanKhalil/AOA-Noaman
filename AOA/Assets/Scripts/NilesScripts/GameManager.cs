@@ -3,6 +3,9 @@ using System.Collections;
 using UnityEngine.UI ; 
 public class GameManager : MonoBehaviour {
 
+
+	static GameManager instance ;
+
 	public Text scoreText;
 	public Text survivorsAliveText;
 	public Text fuelLevelText;
@@ -34,6 +37,17 @@ public class GameManager : MonoBehaviour {
 	bool waveActive;
 	public bool playerAlive;
 
+	void Awake ()
+	{
+		if (instance == null)
+		{
+		instance = this ;
+		}
+		else 
+		{
+			Destroy (instance);
+		}
+	}
 
 	// Use this for initialization
 	void Start () 

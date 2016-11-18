@@ -109,16 +109,17 @@
      <Compile Include="Assets\Scripts\NilesScripts\PlayerOperator.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\SpawnControllerVeta.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\enemyController.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\Grid.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\Heap.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\Grid.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\Heap.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\Node.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\PathRequestManager.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\Pathfinding.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\A star\Unit.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\Menu.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\Node.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\PathRequestManager.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\Pathfinding.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\Spawn.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\SpawnManager.cs" />
-     <Compile Include="Assets\Scripts\NoamanScripts\Unit.cs" />
+     <Compile Include="Assets\Scripts\NoamanScripts\enemyAnmationController.cs" />
      <Compile Include="Assets\Scripts\unused code\Tower.cs" />
      <Compile Include="Assets\Scripts\unused code\towerScript.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
@@ -138,7 +139,6 @@
      <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\CarController.cs" />
      <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\CarUserControl.cs" />
      <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\WheelEffects.cs" />
-     <Compile Include="Assets\enemyAnmationController.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Holo UI for UGUI\Readme.txt" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
@@ -156,6 +156,7 @@
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
      <None Include="Assets\WarZone\Vehicles\Car\CarGuidelines.txt" />
+     <None Include="Assets\Shaders\ItemGlow.shader" />
      <None Include="Assets\Cartoon Soldier\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
