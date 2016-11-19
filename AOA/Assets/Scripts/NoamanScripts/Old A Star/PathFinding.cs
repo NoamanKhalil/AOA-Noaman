@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -7,6 +7,24 @@ public class Pathfinding : MonoBehaviour {
 	public Transform seeker, target;
 
 	Grid grid;
+
+	public Node [] pos ;
+	// TO REPLACE UPDATE ***
+	void requestpath (Transform pointA , Transform pointB , Transform [] pointstoFollow)
+	{
+		pointA = seeker ;
+		pointB = target ;
+
+
+		foreach (Node n in pos)
+		{
+			// return array of nodes and convert to vector3s
+
+		}
+
+			
+	}
+
 
 	void Awake() {
 		grid = GetComponent<Grid>();
@@ -67,6 +85,8 @@ public class Pathfinding : MonoBehaviour {
 
 		grid.path = path;
 
+		pos = path.ToArray () ;  
+
 	}
 
 	int GetDistance(Node nodeA, Node nodeB) {
@@ -80,3 +100,4 @@ public class Pathfinding : MonoBehaviour {
 
 
 }
+*/

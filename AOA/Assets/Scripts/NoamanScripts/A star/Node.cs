@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 // implments IHeapItem Interface 
@@ -60,4 +60,4 @@ public class Node : IHeapItem<Node>
 		// returns a negative comapre as the method returns 1 and we need -1 
 		return -compare ;	
 	}
-}*/
+}

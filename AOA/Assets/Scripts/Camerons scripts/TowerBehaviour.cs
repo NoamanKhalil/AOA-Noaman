@@ -12,6 +12,7 @@ public class TowerBehaviour : MonoBehaviour
 	public Transform rotatingPart;
 	public float enemyDistance;
 	public float lookRadius = 30.0f; 
+	public float health; 
 
 
 	// Use this for initialization

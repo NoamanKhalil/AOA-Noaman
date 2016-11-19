@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System ;
 // the heap class here is based on the article in the website below and is a heavily upgraded implmetaiton of it 
@@ -147,4 +147,4 @@ public interface IHeapItem<T> : IComparable<T> {
 		get;
 		set;
 	}
-}*/
+}

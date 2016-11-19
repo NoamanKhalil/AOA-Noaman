@@ -1,13 +1,13 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 // intermediatery class to be used by behaviour tree to call the A*
 
 public class Unit : MonoBehaviour {
 
 	public Transform target ;
-    float speed = 5 ;
+    //float speed = 5 ;
 	Vector3 []path ;
-	int targetIndex ;
+	//int targetIndex ;
 
 	void Start ()
 	{
@@ -26,15 +26,23 @@ public class Unit : MonoBehaviour {
 		if (pathSuccessful)
 		{
 			path = newPath ;
-			targetIndex = 0 ;
-			StopCoroutine ("FollowPath");
-			StartCoroutine ("FollowPath");
+			//targetIndex = 0 ;
+
+			/*StopCoroutine ("FollowPath");
+			StartCoroutine ("FollowPath");*/
+
 			
 		}
 	}
 
+	void returnPathToFollow (Vector3 [] pathToFollow )
+	{
+		path = pathToFollow ; 
+		
+	}
+
 	//coroutine to spread the movemnet calculations over multiple frames &&  move the enemy 
-	IEnumerator FollowPath()
+	/*IEnumerator FollowPath()
 	{
 		Vector3 currentWaypoint = path[0];
 		while (true)
@@ -74,5 +82,11 @@ public class Unit : MonoBehaviour {
 				}
 			}
 		}
+<<<<<<< HEAD
+	}*/
+}
+=======
 	}
-}*/
+}
+*/
+>>>>>>> origin/master

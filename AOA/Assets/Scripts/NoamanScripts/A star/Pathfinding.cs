@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System ; 
@@ -157,4 +157,3 @@ public class Pathfinding : MonoBehaviour {
 		return 14*dstX + 10 * (dstY-dstX);
 	}
 }
-*/
