@@ -8,24 +8,6 @@ public class Pathfinding : MonoBehaviour {
 
 	Grid grid;
 
-	public Node [] pos ;
-	// TO REPLACE UPDATE ***
-	void requestpath (Transform pointA , Transform pointB , Transform [] pointstoFollow)
-	{
-		pointA = seeker ;
-		pointB = target ;
-
-
-		foreach (Node n in pos)
-		{
-			// return array of nodes and convert to vector3s
-
-		}
-
-			
-	}
-
-
 	void Awake() {
 		grid = GetComponent<Grid>();
 	}
@@ -84,8 +66,6 @@ public class Pathfinding : MonoBehaviour {
 		path.Reverse();
 
 		grid.path = path;
-
-		pos = path.ToArray () ;  
 
 	}
 

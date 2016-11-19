@@ -6,6 +6,8 @@ using System.Collections.Generic;
 public class FindTurret : NodeCs
 {
 	public GameObject [] allTurrets;
+	public Vector3[] pathToFollow; 
+	private int count; 
 	public float turretDistance;
 	public GameObject closestTurret; 
 	public float closestDistance;
@@ -17,6 +19,8 @@ public class FindTurret : NodeCs
 
 	public override void currentBehaviour()
 	{
+
+		count = 0;
 		
 		isRunning ();
 		closestDistance = Mathf.Infinity;
@@ -47,15 +51,31 @@ public class FindTurret : NodeCs
 					if (allTurrets [allTurrets.Length - 1]) {
 						//hasPath = false;
 						Debug.Log (hasPath);
-						//ownerTree.GetComponent<Unit> ().requestPath (turret.transform);
+						ownerTree.GetComponent<Unit> ().requestPath (turret.transform);
 
+					}
+
+					if (pathToFollow.Length > 0)
+					{
+						foreach (Vector3 n in pathToFollow)
+						{
+							if (count < pathToFollow.Length) {
+								ownerTree.transform.Translate (pathToFollow [count]);
+
+								count++; 
+							} 
+
+							else 
+							{
+								break; 
+							}
+						}
 					}
 
 					isSuccessful ();
 				} 
 				else
 				{
-					
 					hasFailed ();
 				}
 
