@@ -95,10 +95,14 @@
      <Compile Include="Assets\Holo UI for UGUI\Simple Sprite Packer\Scripts\SPSpriteInfo.cs" />
      <Compile Include="Assets\Holo UI for UGUI\Simple Sprite Packer\Scripts\UITexturePacker.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\Attack.cs" />
+     <Compile Include="Assets\Scripts\Camerons scripts\FindPlayer.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\FindTurret.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\Flea.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\NodeCs.cs" />
+     <Compile Include="Assets\Scripts\Camerons scripts\Selector.cs" />
+     <Compile Include="Assets\Scripts\Camerons scripts\Sequence.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\TowerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Camerons scripts\Tree.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\UpgradeSystem.cs" />
      <Compile Include="Assets\Scripts\Camerons scripts\enemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\Bullet.cs" />
