@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18446362, g: 0.19928178, b: 0.22668132, a: 1}
+  m_IndirectSpecularColor: {r: 0.18440047, g: 0.1992796, b: 0.22663793, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -726,10 +726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!23 &176289372
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -818,6 +814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4686af6a49d4bbc9a04e1a74a4d4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  children: []
+  state: 0
   allTurrets: []
   turretDistance: 0
   closestTurret: {fileID: 0}
@@ -1078,6 +1076,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 224834115}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!1001 &244388804
 Prefab:
   m_ObjectHideFlags: 0
@@ -1189,6 +1188,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 244388806}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!1 &262197126
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,10 +3043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!23 &646590280
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3135,6 +3131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4686af6a49d4bbc9a04e1a74a4d4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  children: []
+  state: 0
   allTurrets: []
   turretDistance: 0
   closestTurret: {fileID: 0}
@@ -3898,10 +3896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!23 &822442520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3990,6 +3984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4686af6a49d4bbc9a04e1a74a4d4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  children: []
+  state: 0
   allTurrets: []
   turretDistance: 0
   closestTurret: {fileID: 0}
@@ -4201,6 +4197,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 507318722}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!4 &882364230 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011651233718, guid: d2a940fdc90b24106a1c8f791df616b9,
@@ -4547,10 +4544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!23 &1011168333
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4639,6 +4632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4686af6a49d4bbc9a04e1a74a4d4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  children: []
+  state: 0
   allTurrets: []
   turretDistance: 0
   closestTurret: {fileID: 0}
@@ -5269,7 +5264,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010210039698, guid: d35d5a724f4814043b95aee6c79d56be, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 18.008
+      value: -12.2
       objectReference: {fileID: 0}
     - target: {fileID: 4000010210039698, guid: d35d5a724f4814043b95aee6c79d56be, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6128,6 +6123,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1321136331}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!1 &1321136334 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011905886304, guid: d2a940fdc90b24106a1c8f791df616b9,
@@ -7333,10 +7329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!23 &1582777237
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7425,6 +7417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4686af6a49d4bbc9a04e1a74a4d4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  children: []
+  state: 0
   allTurrets: []
   turretDistance: 0
   closestTurret: {fileID: 0}
@@ -8340,6 +8334,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1741854441}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!1001 &1746963915
 Prefab:
   m_ObjectHideFlags: 0
@@ -8883,6 +8878,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1852084594}
   enemyDistance: 0
   lookRadius: 30
+  health: 0
 --- !u!1001 &1856138260
 Prefab:
   m_ObjectHideFlags: 0
@@ -9133,6 +9129,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef9af58ba28d874d9c9658de087be37, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1914489720 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011104520152, guid: d35d5a724f4814043b95aee6c79d56be,
+    type: 2}
+  m_PrefabInternal: {fileID: 1173066448}
+--- !u!114 &1914489721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914489720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c025a535ca86419ca3fd948e1bc701e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1915992873 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 2c605e47626f9d7449a4562fd4ccf0b5, type: 3}
@@ -9650,10 +9662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70549cf29b8c492ba412ad887e60546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 5
-  path: []
-  targetIndex: 0
 --- !u!1001 &1972516362
 Prefab:
   m_ObjectHideFlags: 0
