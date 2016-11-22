@@ -1,14 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
+
 public class enemyController : MonoBehaviour {
+	public Image healthBar;
+	Vector3 enemy;
 
 	public int currentEnemyHealth;
 	public int totalEnemyHealth;
+	public int calcHealth;
 
 	public int enemyDamage;
 	public int enemyDefense;
 	public Vector3 enemySpeed;
+
+	Vector3 target;
+	Vector3 currentPosition;
+	float baseSpeed;
+	float speedMDF;
 
 	int enemyValue;
 
@@ -33,8 +43,16 @@ public class enemyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		enemyValue = 100;
+		enemyValue = 1000;
+		//currentEnemyHealth = totalEnemyHealth;
+		enemy = GameObject.Find ("Turret").GetComponent<Transform> ().position;
 	}
+
+//	public void SetHealthBar (float enemyHealth)
+//	{
+//		healthBar.transform.localScale = new Vector3 (enemyHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+//	}
+
 	void Die()
 	{
 		GameObject.Find ("GameManager").GetComponent<GameManager> ().HandleScore (enemyValue);
@@ -44,7 +62,17 @@ public class enemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (currentEnemyHealth == 0) 
+
+		healthBar.fillAmount = (float)currentEnemyHealth / totalEnemyHealth;
+		//calcHealth = currentEnemyHealth / totalEnemyHealth;
+		//SetHealthBar (calcHealth);
+
+		speedMDF = baseSpeed * Time.deltaTime;
+		currentPosition = GetComponent<Transform> ().position;
+		target = GameObject.FindGameObjectWithTag("Turret").GetComponent<Transform>().position;
+
+		GetComponent<Transform> ().position = Vector3.MoveTowards (currentPosition, target, speedMDF);
+		if (currentEnemyHealth <= 0 || currentEnemyHealth == 0) 
 		{
 			Die ();
 		}

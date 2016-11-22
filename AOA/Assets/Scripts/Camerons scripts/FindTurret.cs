@@ -51,7 +51,7 @@ public class FindTurret : NodeCs
 					if (allTurrets [allTurrets.Length - 1]) {
 						//hasPath = false;
 						Debug.Log (hasPath);
-						ownerTree.GetComponent<Unit> ().requestPath (turret.transform);
+						//ownerTree.GetComponent<Unit> ().requestPath (turret.transform);
 
 					}
 

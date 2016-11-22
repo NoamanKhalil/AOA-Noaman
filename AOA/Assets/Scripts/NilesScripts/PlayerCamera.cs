@@ -8,11 +8,12 @@ public class PlayerCamera : MonoBehaviour {
 	public float xMax;
 	public float zMin;
 	public float zMax;
+	public float zMDF;
 
 	Transform Player;
 
 	void LateUpdate () {
-		Player = GameObject.Find ("soldier(Clone)").GetComponent<Transform> ();
-		transform.position = new Vector3(Mathf.Clamp(Player.position.x, xMin, xMax), transform.position.y, Mathf.Clamp(Player.position.z, zMin, zMax));
+		Player = GameObject.Find ("soldierPlayer(Clone)").GetComponent<Transform> ();
+		transform.position = new Vector3(Mathf.Clamp(Player.position.x, xMin, xMax), transform.position.y, Mathf.Clamp(Player.position.z-zMDF, zMin, zMax));
 	}
 }

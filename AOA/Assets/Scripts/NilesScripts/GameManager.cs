@@ -3,9 +3,8 @@ using System.Collections;
 using UnityEngine.UI ; 
 public class GameManager : MonoBehaviour {
 
-
-	static GameManager instance ;
-
+	public Text healthText;
+	public Text shieldText;
 	public Text scoreText;
 	public Text survivorsAliveText;
 	public Text fuelLevelText;
@@ -14,7 +13,6 @@ public class GameManager : MonoBehaviour {
 	public int currentWave;
 	public int numOfWaves;
 	public int currency;
-	//public GameObject spawnManager;
 	public GameObject playerPrefab;
 	public Transform playerSpawn;
 	public int playerScore;
@@ -25,6 +23,9 @@ public class GameManager : MonoBehaviour {
 	int wavesRemaining;
 	int respawnDelay;
 	int scoreCount;
+
+	int playerHealth;
+	int playerShield;
 	//GameObject player;
 
 	float timeToWaveStart;
@@ -36,18 +37,6 @@ public class GameManager : MonoBehaviour {
 	bool gameStart;
 	bool waveActive;
 	public bool playerAlive;
-
-	void Awake ()
-	{
-		if (instance == null)
-		{
-		instance = this ;
-		}
-		else 
-		{
-			Destroy (instance);
-		}
-	}
 
 	// Use this for initialization
 	void Start () 
@@ -65,6 +54,8 @@ public class GameManager : MonoBehaviour {
 		activeEnemies = 0;
 		waveDelay = 0;
 		playerLives = 3;
+
+
 	}
 
 //	public bool getGameState(bool gameStart)
@@ -127,9 +118,15 @@ public class GameManager : MonoBehaviour {
 	void Update () 
 	{
 		wavesRemaining = (numOfWaves - currentWaveNumber);
-		//scoreText.text = ("Score: ") + playerScore;
-		//survivorsAliveText.text = ("Survivors Remaining: ") + playerLives;
-		//fuelLevelText.text = (wavesRemaining + "Waves to Survive until ship is fueled");
+
+		//playerHealth = GameObject.Find ("soldierPlayer(Clone)").GetComponent<PlayerOperator> ().getCurrentPlayerHealth ();
+		//playerDefense = GameObject.Find ("soldierPlayer(Clone)").GetComponent<PlayerOperator> ().getCurrentPlayerDefense ();
+
+		healthText.text = ("Health: " + playerHealth);
+		shieldText.text = ("Shield: ") + playerShield;
+		scoreText.text = ("Score: ") + playerScore;
+		survivorsAliveText.text = ("Survivors Remaining: ") + playerLives;
+		fuelLevelText.text = (wavesRemaining + " Waves to Survive until ship is fueled");
 
 		if (Input.GetKeyDown(KeyCode.Return)) 
 		{
@@ -168,6 +165,9 @@ public class GameManager : MonoBehaviour {
 				} else {
 					//failState
 				}
+
+				playerHealth = GameObject.Find ("soldierPlayer(Clone)").GetComponent<PlayerOperator> ().getCurrentPlayerHealth ();
+				playerShield = GameObject.Find ("soldierPlayer(Clone)").GetComponent<PlayerOperator> ().getCurrentPlayerShield ();
 				//Begin Wave Management
 				//when enemies = 0 declare wave is over wait to a count of 15 then increment wave number and begin wave phase over again.
 				if (activeEnemies <= 0) 

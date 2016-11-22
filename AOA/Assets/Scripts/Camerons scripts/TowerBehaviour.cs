@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 public class TowerBehaviour : MonoBehaviour 
 {		
 	public GameObject projectile ; 
+	public GameObject cannonMuzzle;
 	public float radius = 20.0f;
 	public LayerMask layermask ; 
 	public float fireRate = 1.5F;
@@ -74,7 +76,7 @@ public class TowerBehaviour : MonoBehaviour
 
 		
 
-				GameObject cannon = Instantiate (projectile, transform.position, Quaternion.identity) as GameObject;
+				GameObject cannon = Instantiate (projectile, cannonMuzzle.transform.position, Quaternion.identity) as GameObject;
 				cannon.GetComponent<Rigidbody> ().AddForce (Direction.normalized * 100.0f, ForceMode.Impulse);
 
 			}

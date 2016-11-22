@@ -107,10 +107,14 @@
      <Compile Include="Assets\Scripts\Camerons scripts\enemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\BulletPooling.cs" />
+     <Compile Include="Assets\Scripts\NilesScripts\CannonShot.cs" />
+     <Compile Include="Assets\Scripts\NilesScripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\NilesScripts\ObstacleStats.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\PlayerOperator.cs" />
+     <Compile Include="Assets\Scripts\NilesScripts\Seek.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\SpawnControllerVeta.cs" />
      <Compile Include="Assets\Scripts\NilesScripts\enemyController.cs" />
      <Compile Include="Assets\Scripts\NoamanScripts\A star\Grid.cs" />
