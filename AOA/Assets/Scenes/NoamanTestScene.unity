@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18440047, g: 0.1992796, b: 0.22663793, a: 1}
+  m_IndirectSpecularColor: {r: 0.18446362, g: 0.19928178, b: 0.22668132, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2251,6 +2251,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8368ff912a4ccb042821034e31fa941e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &559642112 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012638858882, guid: 8368ff912a4ccb042821034e31fa941e,
+    type: 2}
+  m_PrefabInternal: {fileID: 559642111}
+--- !u!114 &559642113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559642112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b574964994032d046bacfbee816a8210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  damage: 5
 --- !u!4 &581862787 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012699494596, guid: 86630976b2d514a36bdd5e5b2235fce6,
@@ -6059,7 +6077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbf5e534a598f34cb31aae5fc9c10bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayGridGixzmos: 0
+  onlyDisplayPathGizmos: 0
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 256
